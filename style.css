@@ -1,0 +1,64 @@
+body{
+  margin : 0;
+  
+}
+header {
+  min-height: 100vh;
+  background : url(background.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con {
+  display: inline-block;
+}
+.text{
+  font-size: 2em;
+  letter-spacing: 7px;
+  border-right: 5px solid;
+  font-family: consolas;
+  color: white;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typing 1s steps(30),
+    cursor .4s step-end infinite alternate;
+  ;
+}
+@keyframes cursor{
+  50% { border-color: transparent;}
+}
+@keyframes typing{
+  from {width : 0}
+}
+.snow ,.snow2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(snow.png);
+  background-position: 0 0;
+}
+.snow{
+  background-size: 140em;
+  animation: snowfall 30s linear infinite;
+}
+.snow2 {
+  background-size: 100em;
+  animation: snowfall2 30s linear infinite;
+  opacity: 0.5;
+}
+@keyframes snowfall{
+  100% {
+    background-position: 70em 70em;
+  }
+}
+@keyframes snowfall2{
+  100% {
+    background-position: 50em 0em;
+  }
+}
