@@ -37,7 +37,7 @@ var i = 0;
 document.addEventListener('DOMContentLoaded', function () {
   var hihi = document.getElementById('hihi');
   var hoho = document.getElementById('hoho');
-  var audio = new Audio('generic2.mp3');
+  var audio = new Audio('background_sound/generic2.mp3');
   hihi.addEventListener('click', function () {
     hoho.textContent = dialouge[i];
     var j = 1000;
